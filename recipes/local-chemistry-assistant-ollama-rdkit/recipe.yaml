@@ -1,0 +1,37 @@
+schema_version: 1
+slug: local-chemistry-assistant-ollama-rdkit
+title: Build a Local Chemistry Assistant with Ollama + RDKit
+summary: Calculate molecular properties with RDKit and explain the recorded results
+  using a local Ollama model, through an explicit Python bridge.
+website: https://chemaiatlas.com/recipes/local-chemistry-assistant-ollama-rdkit/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Run AI Locally
+difficulty: intermediate
+cost: free
+privacy: local
+estimated_setup_minutes: 30
+environments:
+- python
+- ollama
+components:
+- name: RDKit
+  type: cheminformatics
+  version: 2025.3.1
+  required: true
+  url: https://www.rdkit.org/
+- name: Ollama
+  type: local-ai-runtime
+  version: current
+  required: true
+  url: https://ollama.com/
+- name: qwen2.5:3b
+  type: language-model
+  version: Ollama model
+  required: true
+  url: https://ollama.com/library/qwen2.5

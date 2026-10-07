@@ -1,0 +1,27 @@
+schema_version: 1
+slug: chemistry-literature-research
+title: Chemistry Literature Research Stack
+summary: 'Build a traceable literature workflow for medicinal and biological chemistry:
+  search PubMed, fetch article records, and summarize only the retrieved evidence
+  with identifiers.'
+website: https://chemaiatlas.com/recipes/chemistry-literature-research/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Search Literature
+difficulty: intermediate
+cost: mixed
+privacy: cloud
+estimated_setup_minutes: 30
+environments:
+- claude-desktop
+components:
+- name: PubMed MCP (cyanheads)
+  type: mcp
+  version: 2.10.20
+  required: true
+  url: https://github.com/cyanheads/pubmed-mcp-server

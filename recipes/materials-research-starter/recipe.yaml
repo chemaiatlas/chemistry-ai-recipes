@@ -1,0 +1,27 @@
+schema_version: 1
+slug: materials-research-starter
+title: Materials Research Starter Stack
+summary: Use the current Materials Project Python API to fetch a small material summary,
+  preserve identifiers and units, and separate computed properties from experimental
+  evidence.
+website: https://chemaiatlas.com/recipes/materials-research-starter/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Materials Research
+difficulty: intermediate
+cost: mixed
+privacy: depends-on-configuration
+estimated_setup_minutes: 30
+environments:
+- python
+components:
+- name: Materials Project API
+  type: api
+  version: mp-api 0.46.5 / current API
+  required: true
+  url: https://materialsproject.org/api

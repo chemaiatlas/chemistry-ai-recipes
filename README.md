@@ -1,34 +1,54 @@
 # ChemAI Recipes
 
-Curated and verified AI workflows for chemistry.
+Curated, task-oriented AI workflows for chemistry.
 
-ChemAI Recipes combines models, agents, MCP servers, skills, APIs, and scientific tools into practical setups for real chemistry tasks.
+ChemAI Recipes combines models, agents, MCP servers, APIs, local runtimes, and scientific software into practical setups for real chemistry work.
 
-## What you'll find here
+**Interactive catalog:** https://chemaiatlas.com/recipes/
 
-Recipes for workflows such as:
+## Published Recipes
 
-- Molecular analysis
-- Chemistry literature research
-- Molecular property prediction
-- Retrosynthesis
-- Protein and drug research
-- Chemical data processing
-- Local chemistry AI
-- AI assistants for chemistry
+| Recipe | Goal | Level | Cost | Privacy |
+| --- | --- | --- | --- | --- |
+| [Chemical Data Cleaning Stack](recipes/chemical-data-cleaning/) | Chemical Data | Intermediate | Free | Depends On Configuration |
+| [Chemistry AI for Cursor](recipes/chemistry-ai-for-cursor/) | Build a Chemistry Assistant | Intermediate | Mixed | Cloud |
+| [Chemistry Literature Research Stack](recipes/chemistry-literature-research/) | Search Literature | Intermediate | Mixed | Cloud |
+| [Chemistry Research with Claude + PubChem](recipes/chemistry-research-claude-pubchem/) | Analyze Molecules | Intermediate | Mixed | Cloud |
+| [Build a Local Chemistry Assistant with Ollama + RDKit](recipes/local-chemistry-assistant-ollama-rdkit/) | Run AI Locally | Intermediate | Free | Local |
+| [Materials Research Starter Stack](recipes/materials-research-starter/) | Materials Research | Intermediate | Mixed | Depends On Configuration |
+| [Molecular Analysis with Claude + RDKit MCP](recipes/molecular-analysis-with-claude-rdkit/) | Analyze Molecules | Intermediate | Mixed | Cloud |
+| [Protein Research with UniProt MCP](recipes/protein-research-uniprot-mcp/) | Protein & Drug Research | Intermediate | Mixed | Cloud |
+| [Protein Structure Research Stack](recipes/protein-structure-research/) | Protein & Drug Research | Intermediate | Mixed | Cloud |
+| [Retrosynthesis Starter Stack](recipes/retrosynthesis-starter/) | Plan Synthesis | Intermediate | Free | Local |
 
-Each recipe is designed to document the recommended stack, installation and configuration steps, compatibility, example usage, and verification status.
+## What is included
 
-## Status
+Each Recipe directory contains:
 
-🚧 **Coming soon**
+- `recipe.yaml` — machine-readable metadata;
+- `README.md` — GitHub-friendly overview, scope, stack, privacy notes, compatibility and test guidance;
+- `examples/` — reserved for reviewed configuration/code examples.
 
-ChemAI Recipes is currently being prepared as part of [ChemAI Atlas](https://chemaiatlas.com/).
+The interactive step-by-step setup remains on ChemAI Atlas so it can be updated centrally as third-party clients and tools change.
 
-Verified recipes will be published here progressively after the Recipes section launches publicly.
+## Verification
 
-## ChemAI Atlas
+A Recipe being listed here means it has been editorially curated from the published ChemAI Atlas Recipe catalog.
 
-Discover models, agents, MCP servers, skills, open-source projects, and practical guides for chemistry AI.
+`Verified` should only be used when the repository version has been manually re-tested against a recorded environment. Technical verification does not imply scientific validation.
+
+See [docs/verification.md](docs/verification.md).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## About ChemAI Atlas
+
+ChemAI Atlas helps users discover and use AI for chemistry through resources, guides, tasks, and practical Recipes.
 
 https://chemaiatlas.com/
+
+## License
+
+MIT License. See [LICENSE](LICENSE).

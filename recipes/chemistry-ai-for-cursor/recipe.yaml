@@ -1,0 +1,32 @@
+schema_version: 1
+slug: chemistry-ai-for-cursor
+title: Chemistry AI for Cursor
+summary: Add a pinned, restricted RDKit MCP server to a Cursor project and verify
+  molecular-analysis tools using reproducible SMILES prompts.
+website: https://chemaiatlas.com/recipes/chemistry-ai-for-cursor/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Build a Chemistry Assistant
+difficulty: intermediate
+cost: mixed
+privacy: cloud
+estimated_setup_minutes: 30
+environments:
+- cursor
+- python
+components:
+- name: RDKit MCP Server (TandemAI)
+  type: mcp
+  version: 0.2.3 / commit 3a7000ae62e94e095ecd804a403fca12982570cb
+  required: true
+  url: https://github.com/tandemai-inc/rdkit-mcp-server
+- name: RDKit
+  type: cheminformatics
+  version: 2025.3.1
+  required: true
+  url: https://www.rdkit.org/

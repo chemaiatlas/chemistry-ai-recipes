@@ -1,0 +1,26 @@
+schema_version: 1
+slug: retrosynthesis-starter
+title: Retrosynthesis Starter Stack
+summary: Install an isolated AiZynthFinder environment, download its public policy/template/stock
+  files, and run a bounded, traceable retrosynthesis search.
+website: https://chemaiatlas.com/recipes/retrosynthesis-starter/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Plan Synthesis
+difficulty: intermediate
+cost: free
+privacy: local
+estimated_setup_minutes: 60
+environments:
+- python
+components:
+- name: AiZynthFinder
+  type: retrosynthesis
+  version: 4.4.1
+  required: true
+  url: https://github.com/MolecularAI/aizynthfinder

@@ -1,0 +1,37 @@
+schema_version: 1
+slug: protein-structure-research
+title: Protein Structure Research Stack
+summary: Combine RCSB structure records with UniProt protein annotations, inspect
+  method/resolution and entity mappings, and download a traceable mmCIF file.
+website: https://chemaiatlas.com/recipes/protein-structure-research/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Protein & Drug Research
+difficulty: intermediate
+cost: mixed
+privacy: cloud
+estimated_setup_minutes: 45
+environments:
+- claude-desktop
+- python
+components:
+- name: UniProt MCP (cyanheads)
+  type: mcp
+  version: 0.2.4
+  required: true
+  url: https://github.com/cyanheads/uniprot-mcp-server
+- name: RCSB MCP (cnyambura)
+  type: mcp
+  version: 0.1.0 / commit df04c993c31f43d69d6273737bda2de39ace0850
+  required: true
+  url: https://github.com/cnyambura/rcsb-mcp
+- name: RCSB PDB Data API
+  type: api
+  version: live API
+  required: true
+  url: https://data.rcsb.org/

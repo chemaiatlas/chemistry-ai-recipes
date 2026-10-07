@@ -1,0 +1,26 @@
+schema_version: 1
+slug: protein-research-uniprot-mcp
+title: Protein Research with UniProt MCP
+summary: Retrieve reviewed UniProtKB protein records through Claude Desktop, disambiguate
+  organism and accession, and retain functional evidence and source identifiers.
+website: https://chemaiatlas.com/recipes/protein-research-uniprot-mcp/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Protein & Drug Research
+difficulty: intermediate
+cost: mixed
+privacy: cloud
+estimated_setup_minutes: 30
+environments:
+- claude-desktop
+components:
+- name: UniProt MCP (cyanheads)
+  type: mcp
+  version: 0.2.4
+  required: true
+  url: https://github.com/cyanheads/uniprot-mcp-server

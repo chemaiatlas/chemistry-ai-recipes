@@ -1,0 +1,31 @@
+schema_version: 1
+slug: chemical-data-cleaning
+title: Chemical Data Cleaning Stack
+summary: Validate and canonicalize SMILES with RDKit without dropping original rows;
+  flag duplicates and optionally enrich valid entries with PubChem identifiers.
+website: https://chemaiatlas.com/recipes/chemical-data-cleaning/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Chemical Data
+difficulty: intermediate
+cost: free
+privacy: depends-on-configuration
+estimated_setup_minutes: 30
+environments:
+- python
+components:
+- name: RDKit
+  type: cheminformatics
+  version: 2025.3.1
+  required: true
+  url: https://www.rdkit.org/
+- name: PubChemPy
+  type: api-client
+  version: 1.0.5
+  required: false
+  url: https://docs.pubchempy.org/

@@ -1,0 +1,31 @@
+schema_version: 1
+slug: chemistry-research-claude-pubchem
+title: Chemistry Research with Claude + PubChem
+summary: Resolve chemical names to PubChem identifiers and retrieve traceable compound
+  properties from Claude Desktop through a locally installed PubChem MCP server.
+website: https://chemaiatlas.com/recipes/chemistry-research-claude-pubchem/
+status: published
+official: true
+verification:
+  status: needs-review
+  last_tested: null
+  notes: Published on ChemAI Atlas. Mark Verified here only after the repository version
+    is re-tested in a recorded environment.
+goal: Analyze Molecules
+difficulty: intermediate
+cost: mixed
+privacy: cloud
+estimated_setup_minutes: 30
+environments:
+- claude-desktop
+components:
+- name: PubChem MCP (cyanheads)
+  type: mcp
+  version: 0.6.5 / commit 1b179c5043345b9029b269980ac4ad5c0dbad15b
+  required: true
+  url: https://github.com/cyanheads/pubchem-mcp-server
+- name: PubChem PUG REST
+  type: api
+  version: live API
+  required: true
+  url: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
